@@ -140,7 +140,7 @@ OPENAI_MODEL = os.environ.get('OPENAI_MODEL', 'gpt-5.6-luna')
 
 
 
-OLLAMA_BASE_URL = os.environ.get('OLLAMA_BASE_URL', 'https://owuzalr7u0wc1j-11434.proxy.runpod.net')
+OLLAMA_BASE_URL = os.environ.get('OLLAMA_BASE_URL', 'https://owuzalr7u0wc1j-11434.proxy.runpod.net/v1')
 OLLAMA_MODEL = os.environ.get(
-    'OLLAMA_MODEL', 'hf.co/Qwen/Qwen2.5-7B-Instruct-GGUF')
+    'OLLAMA_MODEL', 'hf.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF:latest')
 OLLAMA_TIMEOUT = os.environ.get('OLLAMA_TIMEOUT', '120')

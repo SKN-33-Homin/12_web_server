@@ -90,6 +90,7 @@
                     <nav class="mode-switch" aria-label="답변 방식 전환">
                         <a class="mode-link" data-mode-path="{% url 'app:index' %}" href="{% url 'app:index' %}{% if session_id %}?restore_sess_id={{ session_id|urlencode }}{% endif %}">일반 답변</a>
                         <a class="mode-link is-current" data-mode-path="{% url 'app:stream_index' %}" href="{% url 'app:stream_index' %}{% if session_id %}?restore_sess_id={{ session_id|urlencode }}{% endif %}">스트리밍 답변</a>
+                        <a class="mode-link is-current" data-mode-path="{% url 'app:ollama_index' %}" href="{% url 'app:ollama_index' %}{% if session_id %}?restore_sess_id={{ session_id|urlencode }}{% endif %}" aria-current="page">Ollama 답변</a>
                     </nav>
                 </div>
                 <button id="new-conversation" class="button button-outline new-button" type="button" data-async-control>새 상담</button>
